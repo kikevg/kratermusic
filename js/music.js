@@ -13,7 +13,7 @@ let songs = [
     {
         name: 'Se le pasa el agua',
         artist: 'Grupo Krater',
-        song: '../media/audios/se_le_pasa_el_agua.mp3'
+        song: 'media/audios/se_le_pasa_el_agua.mp3'
     },
 ];
 

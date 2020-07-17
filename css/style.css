@@ -216,3 +216,61 @@ footer #social a:hover i {
         width: 100%;
     }
 }
+
+.preloader {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.spinner {
+    animation: loader 1s infinite;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100%;
+    display: block;
+    height: 50px;
+    width: 50px;
+    opacity: .4;
+    transition: 1s;
+}
+
+@keyframes loader {
+    0% {
+        border-top-color: red;
+        border-right-color: red;
+        border-bottom-color: red;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-top-color: red;
+        border-right-color: red;
+        border-bottom-color: red;
+        transform: rotate(90deg);
+    }
+    50% {
+        border-top-color: white;
+        border-right-color: white;
+        border-bottom-color: white;
+        transform: rotate(180deg);
+    }
+    75% {
+        border-top-color: white;
+        border-right-color: white;
+        border-bottom-color: white;
+        transform: rotate(270deg);
+    }
+    100% {
+        border-top-color: red;
+        border-right-color: red;
+        border-bottom-color: red;
+        transform: rotate(360deg);
+    }
+}
