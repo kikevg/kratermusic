@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2b5123bf0f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-4">
+            <div class="container">
+                <a href="#" class="navbar-brand font-weight-bold">Krater</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="gallery.html"
+                                class="nav-link font-weight-bolder text-uppercase">Galería</a></li>
+                        <li class="nav-item"><a href="music.html"
+                                class="nav-link font-weight-bolder text-uppercase">Musica</a></li>
+                        <li class="nav-item"><a href="video.html"
+                                class="nav-link font-weight-bolder text-uppercase">Videos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="music-section-1" class="d-flex align-items-center">
+            <div class="container">
+                <h1 class="text-white text-center display-1 font-weight-bolder text-uppercase">
+                    <span>I love</span>
+                    <br>
+                    <span class="display-1">krater</span>
+                </h1>
+            </div>
+        </section>
+
+        <section id="music-section-2" class="">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <h2 class="text-white display-3">Disfruta de <br> nuestra música</h2>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <p class="text-white-50 line-height">Seguimos creando música para que bailes, para que cantes,
+                            para que disfrutes... ¡Y que siga la fiesta!</p>
+                    </div>
+                </div>
+                <span class="d-block bg-warning my-5" style="height: 5px; width: 80px"></span>
+                <br>
+                <br>
+                <br>
+                <span class="d-block text-center text-uppercase font-weight-bolder text-white-50 font-size-small">Musica
+                    para tus
+                    oídos</span>
+                <h2 class="text-center text-white">Principales géneros musicales</h2>
+                <span class="d-block bg-warning my-5 mx-auto"
+                    style="height: 5px; width: 40px; transform: rotate(90deg);"></span>
+                <br>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="content-img my-3">
+                            <img src="media/img/test-1.jpg" alt="" class="img-fluid">
+                            <div class="overlay d-flex align-items-center justify-content-center">
+                                <h3 class="text-white font-weight-bolder">Merengue</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="content-img my-3">
+                            <img src="media/img/test-2.jpg" alt="" class="img-fluid">
+                            <div class="overlay d-flex align-items-center justify-content-center">
+                                <h3 class="text-white font-weight-bolder letter-spacing-1px">Cumbia</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="content-img my-3">
+                            <img src="media/img/test-3.jpg" alt="" class="img-fluid">
+                            <div class="overlay d-flex align-items-center justify-content-center">
+                                <h3 class="text-white font-weight-bolder">Salsa</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="content-img my-3">
+                            <img src="media/img/test-4.jpg" alt="" class="img-fluid">
+                            <div class="overlay d-flex align-items-center justify-content-center">
+                                <h3 class="text-white font-weight-bolder">Bachata</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="music-section-3" class="">
+            <div class="container">
+                <h3 class="text-white" style="font-size: 48px;">Latest music</h3>
+                <span class="d-block bg-warning my-5" style="height: 5px; width: 80px"></span>
+                <div class="player d-flex flex-column-reverse flex-md-row">
+                    <div class="w-100" id="img">
+                        <img src="media/img/album.jpg" alt="" class="img-fluid">
+                        <div class="px-5">
+                            <div class="music-info text-center py-3">
+                                <h4 class="d-block text-white" id="name">No Music</h4>
+                                <span class="text-white-50" id="artist">No Artst</span>
+                            </div>
+                            <div class="seek-bar">
+                                <div class="bar">
+                                    <div id="fill"></div>
+                                </div>
+                            </div>
+                            <div class="time text-white-50 text-center font-size-small py-3">
+                                <span id="currentTime">00:00</span>
+                                /
+                                <span id="duration">00:00</span>
+                            </div>
+                            <div class="buttons d-flex align-items-center justify-content-center py-4">
+                                <button class="border-0 bg-transparent p-0" id="prev">
+                                    <i class="fas fa-step-backward text-white"></i>
+                                </button>
+                                <button
+                                    class="border-0 bg-danger p-0 mx-4 rounded-circle d-flex align-items-center justify-content-center"
+                                    style="height: 60px; width: 60px;" id="play-pause">
+                                    <i class="fas fa-play text-white"></i>
+                                </button>
+                                <button class="border-0 bg-transparent p-0" id="next">
+                                    <i class="fas fa-step-forward text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100" id="bg">
+                        <span class="text-danger text-uppercase font-size-small letter-spacing-1px">New album</span>
+                        <h4 class="text-white display-4">Album name</h4>
+                        <ul class="list-group list-group-flush px-0 py-2" id="ul">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="media/img/krater-producciones.png" alt="" class="img-fluid">
+                    <div class="py-5">
+                        <ul class="list-unstyled d-flex justify-content-around" id="social">
+                            <li>
+                                <a href="#" class="text-decoration-none d-block d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                    <i class="fab fa-facebook-f text-white-50 fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none d-block d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                    <i class="fab fa-twitter text-white-50 fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none d-block d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                    <i class="fab fa-instagram text-white-50 fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none d-block d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                    <i class="fab fa-youtube text-white-50 fa-2x"></i>
+                                </a>
+                            </li>
+                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h5 class="text-uppercase text-danger letter-spacing-1px font-weight-bolder">links</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="index.html" class="text-white-50 d-block py-2">Home</a>
+                                </li>
+                                <li>
+                                    <a href="index.html" class="text-white-50 d-block py-2">Services</a>
+                                </li>
+                                <li>
+                                    <a href="index.html" class="text-white-50 d-block py-2">About</a>
+                                </li>
+                                <li>
+                                    <a href="index.html" class="text-white-50 d-block py-2">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5 class="text-uppercase text-danger letter-spacing-1px font-weight-bolder">multimedia</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="index.html" class="text-white-50 d-block py-2">Gallery</a>
+                                </li>
+                                <li>
+                                    <a href="index.html" class="text-white-50 d-block py-2">Music</a>
+                                </li>
+                                <li>
+                                    <a href="index.html" class="text-white-50 d-block py-2">Videos</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5 class="text-uppercase text-danger letter-spacing-1px font-weight-bolder">Reservations</h5>
+                            <ul class="list-unstyled">
+                                <li class="py-2">
+                                    <span class="text-white">Telefono</span>
+                                    <span class="text-white-50 d-block">+503 7000-000</span>
+                                </li>
+                                <li class="py-2">
+                                    <span class="text-white">Email</span>
+                                    <span class="text-white-50 d-block">example@example.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="js/music.js"></script>
+</body>
+
+</html>
