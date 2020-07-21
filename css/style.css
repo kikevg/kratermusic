@@ -198,9 +198,15 @@ footer #social a:hover i {
 }
 
 @media screen and (max-width: 600px) {
+
     .display-1 {
         font-size: 50px;
     }
+
+    .display-2 {
+        font-size: 50px;
+    }
+
     .display-3 {
         font-size: 40px;
     }
@@ -215,6 +221,26 @@ footer #social a:hover i {
     .grid-item--width2 {
         width: 100%;
     }
+
+    .slick-carousel-item {
+        width: 300px;
+    }
+
+    .slick-prev {
+        left: 40%;
+        top: 60%;
+        z-index: 100000;
+    }
+    
+    .slick-next {
+        right: 40%;
+        top: 60%;
+    }
+
+    .slick-prev:before, .slick-next:before {
+        font-size: 20px;
+    }
+    
 }
 
 .preloader {
